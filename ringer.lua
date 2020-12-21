@@ -56,13 +56,15 @@ function Ringer:next()
         error("next(): buffer is empty!")
     end
 
+    local result = self.buffer[self.current_index]
+
     self.current_index = self.current_index + 1
 
     if self.current_index > #self.buffer then
         self.current_index = 1
     end
 
-    return self.buffer[self.current_index]
+    return result
 end
 
 function Ringer:is_empty()
