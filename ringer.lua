@@ -12,6 +12,16 @@ function Ringer_mt.__len(self)
     return #self.buffer
 end
 
+function Ringer_mt.__tostring(self)
+    local result_table = {}
+
+    for _, value in pairs(self.buffer) do
+        table.insert(result_table, tostring(value))
+    end
+
+    return "[" .. table.concat(result_table, ", ") .. "]"
+end
+
 function Ringer:new(data)
     if data and type(data) ~= "table" then
         error("Ringer(): data need to be table type")
