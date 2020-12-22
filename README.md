@@ -101,7 +101,7 @@ Returns:
 
 Also, ringer implements some metamethods:
 
-* `\#ringer` - return lenght of buffer
+* `#ringer` - return lenght of buffer
 * `print(ringer)` - pretty print buffer content like `[a, b, c, d]`
 
 ## Testing
