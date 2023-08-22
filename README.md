@@ -99,6 +99,20 @@ Returns:
 
 ---
 
+**`:is_exist(item)`**
+
+checks if the `item` is already in the buffer
+
+Arguments:
+
+* `item` `(any)` - The data for deletion
+
+Returns:
+
+* `(boolean)` - Return `true` if item is exist in bufer
+
+---
+
 Also, ringer implements some metamethods:
 
 * `#ringer` - return lenght of buffer
